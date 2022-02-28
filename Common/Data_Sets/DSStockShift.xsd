@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSStockShift" targetNamespace="http://tempuri.org/DSStockShift.xsd" xmlns:mstns="http://tempuri.org/DSStockShift.xsd" xmlns="http://tempuri.org/DSStockShift.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSStockShift" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DSStockShift" msprop:Generator_UserDSName="DSStockShift" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockShift" msprop:Generator_UserTableName="StockShift" msprop:Generator_RowDeletedName="StockShiftRowDeleted" msprop:Generator_TableClassName="StockShiftDataTable" msprop:Generator_RowChangedName="StockShiftRowChanged" msprop:Generator_RowClassName="StockShiftRow" msprop:Generator_RowChangingName="StockShiftRowChanging" msprop:Generator_RowEvArgName="StockShiftRowChangeEvent" msprop:Generator_RowEvHandlerName="StockShiftRowChangeEventHandler" msprop:Generator_TablePropName="StockShift" msprop:Generator_TableVarName="tableStockShift" msprop:Generator_RowDeletingName="StockShiftRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShiftID" msprop:Generator_UserColumnName="ShiftID" msprop:Generator_ColumnPropNameInRow="ShiftID" msprop:Generator_ColumnVarNameInTable="columnShiftID" msprop:Generator_ColumnPropNameInTable="ShiftIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ShiftDate" msprop:Generator_UserColumnName="ShiftDate" msprop:Generator_ColumnPropNameInRow="ShiftDate" msprop:Generator_ColumnVarNameInTable="columnShiftDate" msprop:Generator_ColumnPropNameInTable="ShiftDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemID" msprop:Generator_UserColumnName="ItemID" msprop:Generator_ColumnPropNameInRow="ItemID" msprop:Generator_ColumnVarNameInTable="columnItemID" msprop:Generator_ColumnPropNameInTable="ItemIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemName" msprop:Generator_UserColumnName="ItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Source" msprop:Generator_UserColumnName="Source" msprop:Generator_ColumnPropNameInRow="Source" msprop:Generator_ColumnVarNameInTable="columnSource" msprop:Generator_ColumnPropNameInTable="SourceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Destination" msprop:Generator_UserColumnName="Destination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88B315BB-E360-47C9-9C64-B22BB55EE8A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restorant_Management_System</RootNamespace>
+    <AssemblyName>Restorant-Management-System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Exe%28Departmental%29\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Restorant_Management_System.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B6115BE7C52DA1A38238B8A016F575636125179D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PointofSale_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Zip.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.Bitmap.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="DGV">
+      <HintPath>..\..\..\..\Project Data\DGV.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\SchForms\SchBranch.cs" />
+    <Compile Include="Accounts\SchForms\SchVoucher.cs" />
+    <Compile Include="BarcodeCommon.cs" />
+    <Compile Include="BarcodeLib.cs" />
+    <Compile Include="BarcodeXML.Designer.cs" />
+    <Compile Include="BarcodeXML1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeXML.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code39.cs" />
+    <Compile Include="Forms\frmAcDaItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAcDaItems.Designer.cs">
+      <DependentUpon>frmAcDaItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBarcodeDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBarcodeDiscount.Designer.cs">
+      <DependentUpon>FrmBarcodeDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBarcodeTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBarcodeTitle.Designer.cs">
+      <DependentUpon>FrmBarcodeTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBranch.Designer.cs">
+      <DependentUpon>FrmBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCategory.designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCategoryPartyRelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCategoryPartyRelation.designer.cs">
+      <DependentUpon>FrmCategoryPartyRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChallan.Designer.cs">
+      <DependentUpon>FrmChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmChangeusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChangeusers.Designer.cs">
+      <DependentUpon>FrmChangeusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmChartofAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChartofAccounts.designer.cs">
+      <DependentUpon>FrmChartofAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCity.designer.cs">
+      <DependentUpon>FrmCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmClaim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmClaim.designer.cs">
+      <DependentUpon>FrmClaim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmClaimInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmClaimInvoice.Designer.cs">
+      <DependentUpon>frmClaimInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCounter.Designer.cs">
+      <DependentUpon>FrmCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDaySettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDaySettings.designer.cs">
+      <DependentUpon>FrmDaySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDeliveryChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDeliveryChallan.Designer.cs">
+      <DependentUpon>FrmDeliveryChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiscount.Designer.cs">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDiscountPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDiscountPassword.Designer.cs">
+      <DependentUpon>FrmDiscountPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmExcelDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmExcelDiscount.Designer.cs">
+      <DependentUpon>FrmExcelDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFixedAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFixedAccounts.designer.cs">
+      <DependentUpon>FrmFixedAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmItem.designer.cs">
+      <DependentUpon>FrmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMenuReceipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenuReceipe.Designer.cs">
+      <DependentUpon>FrmMenuReceipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMonthClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMonthClose.designer.cs">
+      <DependentUpon>FrmMonthClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNewAccount.designer.cs">
+      <DependentUpon>FrmNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOpeningBalances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOpeningBalances.designer.cs">
+      <DependentUpon>FrmOpeningBalances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmParty.designer.cs">
+      <DependentUpon>FrmParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPartywiseOpeningStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPartywiseOpeningStock.Designer.cs">
+      <DependentUpon>FrmPartywiseOpeningStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPettyCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPettyCash.Designer.cs">
+      <DependentUpon>FrmPettyCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPurchaseInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPurchaseInvoice.Designer.cs">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPwdPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPwdPopup.Designer.cs">
+      <DependentUpon>FrmPwdPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmReceipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReceipe.designer.cs">
+      <DependentUpon>FrmReceipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmReprintBarCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReprintBarCodes.Designer.cs">
+      <DependentUpon>FrmReprintBarCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSaleInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSaleInvoice.Designer.cs">
+      <DependentUpon>frmSaleInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSaleInvoiceBakery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSaleInvoiceBakery.Designer.cs">
+      <DependentUpon>FrmSaleInvoiceBakery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmState.Designer.cs">
+      <DependentUpon>FrmState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStockAdj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStockAdj.Designer.cs">
+      <DependentUpon>frmStockAdj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmStockDifference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmStockDifference.Designer.cs">
+      <DependentUpon>FrmStockDifference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSummary.Designer.cs">
+      <DependentUpon>frmSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUsers.designer.cs">
+      <DependentUpon>FrmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmVoucher.Designer.cs">
+      <DependentUpon>FrmVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWastageInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWastageInvoice.Designer.cs">
+      <DependentUpon>frmWastageInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmWholeSaleInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmWholeSaleInvoice.Designer.cs">
+      <DependentUpon>FrmWholeSaleInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRecipieProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRecipieProduction.Designer.cs">
+      <DependentUpon>FrmRecipieProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Test.designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBarcode.cs" />
+    <Compile Include="Misc\AccountsGlobals.cs" />
+    <Compile Include="Misc\SingleInstance.cs" />
+    <Compile Include="Misc\TNumEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Misc\TNumEditDataGridViewElements.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\FrmAccountLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\FrmAccountLedger.designer.cs">
+      <DependentUpon>FrmAccountLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\FrmCashBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\FrmCashBook.designer.cs">
+      <DependentUpon>FrmCashBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\FrmCurrentGodownStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\FrmCurrentGodownStock.designer.cs">
+      <DependentUpon>FrmCurrentGodownStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\frmDailyActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frmDailyActivity.Designer.cs">
+      <DependentUpon>frmDailyActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\frmItemLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frmItemLedger.Designer.cs">
+      <DependentUpon>frmItemLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\frmRegisterInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frmRegisterInvoice.Designer.cs">
+      <DependentUpon>frmRegisterInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\frmStockAdjRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frmStockAdjRpt.Designer.cs">
+      <DependentUpon>frmStockAdjRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\frmValuationSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frmValuationSale.Designer.cs">
+      <DependentUpon>frmValuationSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Forms\frmViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frmViewer.Designer.cs">
+      <DependentUpon>frmViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restorant_Management_System\Report_Forms\FrmReportViewer.cs" />
+    <Compile Include="Sch_Forms\frmSchPending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\frmSchPending.Designer.cs">
+      <DependentUpon>frmSchPending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchBarcodeDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchBarcodeDiscount.Designer.cs">
+      <DependentUpon>SchBarcodeDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchBarcodeTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchBarcodeTitle.Designer.cs">
+      <DependentUpon>SchBarcodeTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchBranch.Designer.cs">
+      <DependentUpon>SchBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchChallan.Designer.cs">
+      <DependentUpon>SchChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchCity.Designer.cs">
+      <DependentUpon>SchCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchClaim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchClaim.designer.cs">
+      <DependentUpon>SchClaim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchCounter.Designer.cs">
+      <DependentUpon>SchCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchDiscount.Designer.cs">
+      <DependentUpon>SchDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchAccounts.designer.cs">
+      <DependentUpon>SchAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchCategory.designer.cs">
+      <DependentUpon>SchCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchDepartment.designer.cs">
+      <DependentUpon>SchDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchItems.designer.cs">
+      <DependentUpon>SchItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchMCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchMCategory.designer.cs">
+      <DependentUpon>SchMCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchMenu.designer.cs">
+      <DependentUpon>SchMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchPartywiseOStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchPartywiseOStock.designer.cs">
+      <DependentUpon>SchPartywiseOStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchPurchase.Designer.cs">
+      <DependentUpon>SchPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchRecipieProdcution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchRecipieProdcution.Designer.cs">
+      <DependentUpon>SchRecipieProdcution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchSaleInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchSaleInvoice.Designer.cs">
+      <DependentUpon>SchSaleInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchState.Designer.cs">
+      <DependentUpon>SchState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchUsers.designer.cs">
+      <DependentUpon>SchUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchVoucher.Designer.cs">
+      <DependentUpon>SchVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchVoucherInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchVoucherInvoice.Designer.cs">
+      <DependentUpon>SchVoucherInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchWastage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchWastage.Designer.cs">
+      <DependentUpon>SchWastage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sch_Forms\SchWholesaleInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sch_Forms\SchWholesaleInvoice.Designer.cs">
+      <DependentUpon>SchWholesaleInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Forms\frmAcDaItems.resx">
+      <DependentUpon>frmAcDaItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBarcodeDiscount.resx">
+      <DependentUpon>FrmBarcodeDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBarcodeTitle.resx">
+      <DependentUpon>FrmBarcodeTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBranch.resx">
+      <DependentUpon>FrmBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCategoryPartyRelation.resx">
+      <DependentUpon>FrmCategoryPartyRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChallan.resx">
+      <DependentUpon>FrmChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChangeusers.resx">
+      <DependentUpon>FrmChangeusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChartofAccounts.resx">
+      <DependentUpon>FrmChartofAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCity.resx">
+      <DependentUpon>FrmCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCity.ur.resx">
+      <DependentUpon>FrmCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmClaim.resx">
+      <DependentUpon>FrmClaim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmClaimInvoice.resx">
+      <DependentUpon>frmClaimInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCounter.resx">
+      <DependentUpon>FrmCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDaySettings.resx">
+      <DependentUpon>FrmDaySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDeliveryChallan.resx">
+      <DependentUpon>FrmDeliveryChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDiscount.resx">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDiscountPassword.resx">
+      <DependentUpon>FrmDiscountPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmExcelDiscount.resx">
+      <DependentUpon>FrmExcelDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFixedAccounts.resx">
+      <DependentUpon>FrmFixedAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmItem.resx">
+      <DependentUpon>FrmItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenuReceipe.resx">
+      <DependentUpon>FrmMenuReceipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMonthClose.resx">
+      <DependentUpon>FrmMonthClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNewAccount.resx">
+      <DependentUpon>FrmNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOpeningBalances.resx">
+      <DependentUpon>FrmOpeningBalances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmParty.resx">
+      <DependentUpon>FrmParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPartywiseOpeningStock.resx">
+      <DependentUpon>FrmPartywiseOpeningStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPettyCash.resx">
+      <DependentUpon>FrmPettyCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPurchaseInvoice.resx">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPwdPopup.resx">
+      <DependentUpon>FrmPwdPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReceipe.resx">
+      <DependentUpon>FrmReceipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReprintBarCodes.resx">
+      <DependentUpon>FrmReprintBarCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSaleInvoice.resx">
+      <DependentUpon>frmSaleInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSaleInvoiceBakery.resx">
+      <DependentUpon>FrmSaleInvoiceBakery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmState.resx">
+      <DependentUpon>FrmState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStockAdj.resx">
+      <DependentUpon>frmStockAdj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmStockDifference.resx">
+      <DependentUpon>FrmStockDifference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSummary.resx">
+      <DependentUpon>frmSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUsers.resx">
+      <DependentUpon>FrmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmVoucher.resx">
+      <DependentUpon>FrmVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWastageInvoice.resx">
+      <DependentUpon>frmWastageInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWholeSaleInvoice.resx">
+      <DependentUpon>FrmWholeSaleInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRecipieProduction.resx">
+      <DependentUpon>FrmRecipieProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptAccLedger.rdlc" />
+    <EmbeddedResource Include="Report\RptAccountPayable.rdlc" />
+    <EmbeddedResource Include="Report\RptAccountReceivable.rdlc" />
+    <EmbeddedResource Include="Report\RptActivity.rdlc" />
+    <EmbeddedResource Include="Report\RptBarcodesWithoutDisc.rdlc" />
+    <EmbeddedResource Include="Report\rptCashBook.rdlc" />
+    <EmbeddedResource Include="Report\RptCCSaleSummary.rdlc" />
+    <EmbeddedResource Include="Report\RptChallan.rdlc" />
+    <EmbeddedResource Include="Report\RptClaimInvoice.rdlc" />
+    <EmbeddedResource Include="Report\RptCurrentStock.rdlc" />
+    <EmbeddedResource Include="Report\RptDiscountOffers.rdlc" />
+    <EmbeddedResource Include="Report\RptGeneralJournal.rdlc" />
+    <EmbeddedResource Include="Report\RptGodownStockrdlc.rdlc" />
+    <EmbeddedResource Include="Report\RptGTrialBalance.rdlc" />
+    <EmbeddedResource Include="Report\RptHotItem.rdlc" />
+    <EmbeddedResource Include="Report\RptIncomeStatement.rdlc" />
+    <EmbeddedResource Include="Report\RptInventoryValuation.rdlc" />
+    <EmbeddedResource Include="Report\RptItemLadgerCombined.rdlc" />
+    <EmbeddedResource Include="Report\RptItemLedger.rdlc" />
+    <EmbeddedResource Include="Report\RptItems.rdlc" />
+    <EmbeddedResource Include="Report\RptItemShortKeys.rdlc" />
+    <EmbeddedResource Include="Report\RptJournalVoucher.rdlc" />
+    <EmbeddedResource Include="Report\RptKitchen.rdlc" />
+    <EmbeddedResource Include="Report\RptMIS.rdlc" />
+    <EmbeddedResource Include="Report\RptOrderDetail.rdlc" />
+    <EmbeddedResource Include="Report\RptDeliveryChallan.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptBarcodePrint.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptPettyCash.rdlc" />
+    <EmbeddedResource Include="Report\RptPhoneBook.rdlc" />
+    <EmbeddedResource Include="Report\RptPurchaseInvoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptPurchaseRegister.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSaleInvoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSaleInvoiceBakery.rdlc" />
+    <EmbeddedResource Include="Report\RptSalePending.rdlc" />
+    <EmbeddedResource Include="Report\RptSaleRegister.rdlc" />
+    <EmbeddedResource Include="Report\RptShopCashCSummary.rdlc" />
+    <EmbeddedResource Include="Report\RptStockAdj.rdlc" />
+    <EmbeddedResource Include="Report\RptStockDifference.rdlc" />
+    <EmbeddedResource Include="Report\RptSummary.rdlc" />
+    <EmbeddedResource Include="Report\RptTrialBalance.rdlc" />
+    <EmbeddedResource Include="Report\RptValuationSale.rdlc" />
+    <EmbeddedResource Include="Report\RptVendorWInventory.rdlc" />
+    <EmbeddedResource Include="Report\RptWholeSale.rdlc" />
+    <EmbeddedResource Include="Report_Forms\FrmAccountLedger.resx">
+      <DependentUpon>FrmAccountLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\FrmCashBook.resx">
+      <DependentUpon>FrmCashBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\FrmCurrentGodownStock.resx">
+      <DependentUpon>FrmCurrentGodownStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frmDailyActivity.resx">
+      <DependentUpon>frmDailyActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frmItemLedger.resx">
+      <DependentUpon>frmItemLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frmRegisterInvoice.resx">
+      <DependentUpon>frmRegisterInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frmStockAdjRpt.resx">
+      <DependentUpon>frmStockAdjRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frmValuationSale.resx">
+      <DependentUpon>frmValuationSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frmViewer.resx">
+      <DependentUpon>frmViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\frmSchPending.resx">
+      <DependentUpon>frmSchPending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchBarcodeDiscount.resx">
+      <DependentUpon>SchBarcodeDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchBarcodeTitle.resx">
+      <DependentUpon>SchBarcodeTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchBranch.resx">
+      <DependentUpon>SchBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchChallan.resx">
+      <DependentUpon>SchChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchCity.resx">
+      <DependentUpon>SchCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchClaim.resx">
+      <DependentUpon>SchClaim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchCounter.resx">
+      <DependentUpon>SchCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchDiscount.resx">
+      <DependentUpon>SchDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchAccounts.resx">
+      <DependentUpon>SchAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchCategory.resx">
+      <DependentUpon>SchCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchDepartment.resx">
+      <DependentUpon>SchDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchItems.resx">
+      <DependentUpon>SchItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchMCategory.resx">
+      <DependentUpon>SchMCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchMenu.resx">
+      <DependentUpon>SchMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchPartywiseOStock.resx">
+      <DependentUpon>SchPartywiseOStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchPurchase.resx">
+      <DependentUpon>SchPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchRecipieProdcution.resx">
+      <DependentUpon>SchRecipieProdcution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchSaleInvoice.resx">
+      <DependentUpon>SchSaleInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchState.resx">
+      <DependentUpon>SchState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchUsers.resx">
+      <DependentUpon>SchUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchVoucher.resx">
+      <DependentUpon>SchVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchVoucherInvoice.resx">
+      <DependentUpon>SchVoucherInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchWastage.resx">
+      <DependentUpon>SchWastage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sch_Forms\SchWholesaleInvoice.resx">
+      <DependentUpon>SchWholesaleInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BarcodeXML.xsc">
+      <DependentUpon>BarcodeXML.xsd</DependentUpon>
+    </None>
+    <None Include="BarcodeXML.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarcodeXML1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarcodeXML.xss">
+      <DependentUpon>BarcodeXML.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PointofSale_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Common.Address.datasource" />
+    <None Include="Properties\DataSources\Common.Barcode.datasource" />
+    <None Include="Properties\DataSources\Common.Barcodes.datasource" />
+    <None Include="Properties\DataSources\Common.Category.datasource" />
+    <None Include="Properties\DataSources\Common.Challan.datasource" />
+    <None Include="Properties\DataSources\Common.ChartOfAccounts.datasource" />
+    <None Include="Properties\DataSources\Common.Customer.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSAccLedger+SPAccountsLedgerDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSAccLedger+SPAccountsLedgerRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSAccLedger+SPAccountsLedgerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSAccLedger+SPAccountsLedgerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSAccLedger.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSActivity+ActivityDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSActivity+ActivityRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSActivity+ActivityRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSActivity+ActivityRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSActivity.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSaleInvoiceBakery.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSBalanceSheet+SPBalanceSheetDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSBalanceSheet+SPBalanceSheetRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSBalanceSheet+SPBalanceSheetRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSBalanceSheet+SPBalanceSheetRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSBalanceSheet.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCashBook+SPCashBookDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCashBook+SPCashBookRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCashBook+SPCashBookRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCashBook+SPCashBookRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCashBook.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCCSaleSummary.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DsChallan.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSChartofAcc.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSClaim.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSClaimRegister+ClaimRegisterDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSClaimRegister+ClaimRegisterRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSClaimRegister+ClaimRegisterRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSClaimRegister+ClaimRegisterRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSClaimRegister.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCOA+ChartOfAccountsDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCOA+ChartOfAccountsRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCOA+ChartOfAccountsRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCOA+ChartOfAccountsRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCOA.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCurrentStock+CurrentStockDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCurrentStock+CurrentStockRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCurrentStock+CurrentStockRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCurrentStock+CurrentStockRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSCurrentStock.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSDailySummary+DtDailyItemSummaryDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSDailySummary+DtDailyItemSummaryRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSDailySummary+DtDailyItemSummaryRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSDailySummary+DtDailyItemSummaryRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSDailySummary.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSExpChart+ExpChartDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSExpChart+ExpChartRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSExpChart+ExpChartRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSExpChart+ExpChartRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSExpChart.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPFundsFlowDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPFundsFlowRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPFundsFlowRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPFundsFlowRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPTotalDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPTotalRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPTotalRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow+SPTotalRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSFundsFlow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGodownStock+GodownStockDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGodownStock+GodownStockRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGodownStock+GodownStockRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGodownStock+GodownStockRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGodownStock.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGroupBalances+SPGroupBalancesDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGroupBalances+SPGroupBalancesRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGroupBalances+SPGroupBalancesRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGroupBalances+SPGroupBalancesRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSGroupBalances.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSIncomeStatement+SPIncomeStatementDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSIncomeStatement+SPIncomeStatementRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSIncomeStatement+SPIncomeStatementRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSIncomeStatement+SPIncomeStatementRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSIncomeStatement.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSInventoryValuation.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemBarcode+SPItemBarcodeDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemBarcode+SPItemBarcodeRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemBarcode+SPItemBarcodeRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemBarcode+SPItemBarcodeRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemBarcode.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemLedger+ItemLedgerDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemLedger+ItemLedgerRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemLedger+ItemLedgerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemLedger+ItemLedgerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItemLedger.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSItems.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSMIS.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSOffers.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPettyCash.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPhoneBook.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSProfitLose+SPProfitLoseDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSProfitLose+SPProfitLoseRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSProfitLose+SPProfitLoseRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSProfitLose+SPProfitLoseRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSProfitLose.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseInvoice.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseRegister+PurchaseRegisterDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseRegister+PurchaseRegisterRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseRegister+PurchaseRegisterRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseRegister+PurchaseRegisterRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseRegister.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSPurchaseReturn.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSReOrder+ReOrderDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSReOrder+ReOrderRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSReOrder+ReOrderRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSReOrder+ReOrderRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSReOrder.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleInvoice+SaleInvoiceDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleInvoice+SaleInvoiceRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleInvoice+SaleInvoiceRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleInvoice+SaleInvoiceRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleInvoice.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleRegister+SaleRegisterDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleRegister+SaleRegisterRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleRegister+SaleRegisterRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleRegister+SaleRegisterRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSaleRegister.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockAdj+StockAdjDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockAdj+StockAdjRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockAdj+StockAdjRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockAdj+StockAdjRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockAdj.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockDifference.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockShift+StockShiftDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockShift+StockShiftRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockShift+StockShiftRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockShift+StockShiftRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStockShift.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStoreStockCT+SPStoreStockCTDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStoreStockCT+SPStoreStockCTRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStoreStockCT+SPStoreStockCTRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStoreStockCT+SPStoreStockCTRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSStoreStockCT.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSummary+SummaryDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSummary+SummaryRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSummary+SummaryRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSummary+SummaryRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSSummary.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSValuationSale.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSVendorWInventory.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSVoucher+VoucherDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSVoucher+VoucherRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSVoucher+VoucherRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSVoucher+VoucherRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSVoucher.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSWastageReg+WastageInvoiceDataTable.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSWastageReg+WastageInvoiceRow.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSWastageReg+WastageInvoiceRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSWastageReg+WastageInvoiceRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSWastageReg.datasource" />
+    <None Include="Properties\DataSources\Common.Data_Sets.DSWholeSale.datasource" />
+    <None Include="Properties\DataSources\Common.Department.datasource" />
+    <None Include="Properties\DataSources\Common.DiscountOffer.datasource" />
+    <None Include="Properties\DataSources\Common.Employee.datasource" />
+    <None Include="Properties\DataSources\Common.ExistingTables.datasource" />
+    <None Include="Properties\DataSources\Common.Globals.datasource" />
+    <None Include="Properties\DataSources\Common.Godown.datasource" />
+    <None Include="Properties\DataSources\Common.Item.datasource" />
+    <None Include="Properties\DataSources\Common.ItemName.datasource" />
+    <None Include="Properties\DataSources\Common.Location.datasource" />
+    <None Include="Properties\DataSources\Common.Menus.datasource" />
+    <None Include="Properties\DataSources\Common.MenusCategory.datasource" />
+    <None Include="Properties\DataSources\Common.MenusList.datasource" />
+    <None Include="Properties\DataSources\Common.Name.datasource" />
+    <None Include="Properties\DataSources\Common.OrderBody.datasource" />
+    <None Include="Properties\DataSources\Common.Orders.datasource" />
+    <None Include="Properties\DataSources\Common.PackingType.datasource" />
+    <None Include="Properties\DataSources\Common.Person.datasource" />
+    <None Include="Properties\DataSources\Common.Purchase.datasource" />
+    <None Include="Properties\DataSources\Common.PurchaseLine.datasource" />
+    <None Include="Properties\DataSources\Common.Purchaser.datasource" />
+    <None Include="Properties\DataSources\Common.PurchaseReturn.datasource" />
+    <None Include="Properties\DataSources\Common.PurchaseReturnLine.datasource" />
+    <None Include="Properties\DataSources\Common.SaleInvoice.datasource" />
+    <None Include="Properties\DataSources\Common.SaleInvoiceLine.datasource" />
+    <None Include="Properties\DataSources\Common.SaleReturn.datasource" />
+    <None Include="Properties\DataSources\Common.SaleReturnLine.datasource" />
+    <None Include="Properties\DataSources\Common.SchDiscOffers.datasource" />
+    <None Include="Properties\DataSources\Common.SchItems.datasource" />
+    <None Include="Properties\DataSources\Common.StockAdj.datasource" />
+    <None Include="Properties\DataSources\Common.StockConvert.datasource" />
+    <None Include="Properties\DataSources\Common.StockConvertLine.datasource" />
+    <None Include="Properties\DataSources\Common.StockShift.datasource" />
+    <None Include="Properties\DataSources\Common.StockShiftLine.datasource" />
+    <None Include="Properties\DataSources\Common.Store.datasource" />
+    <None Include="Properties\DataSources\Common.Summary.datasource" />
+    <None Include="Properties\DataSources\Common.Table.datasource" />
+    <None Include="Properties\DataSources\Common.User.datasource" />
+    <None Include="Properties\DataSources\Common.UserRight.datasource" />
+    <None Include="Properties\DataSources\Common.Vendor.datasource" />
+    <None Include="Properties\DataSources\Common.Wastage.datasource" />
+    <None Include="Properties\DataSources\Common.WastageLine.datasource" />
+    <None Include="Properties\DataSources\Common.WastageReturn.datasource" />
+    <None Include="Properties\DataSources\Common.WastageReturnLine.datasource" />
+    <None Include="Properties\DataSources\DAL.ReadProjectConfigFile.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSAccLedger+SPAccountsLedgerDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSAccLedger+SPAccountsLedgerRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSAccLedger+SPAccountsLedgerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSAccLedger+SPAccountsLedgerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSAccLedger.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSActivity+ActivityDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSActivity+ActivityRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSActivity+ActivityRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSActivity+ActivityRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSActivity.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCashBook+SPCashBookDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCashBook+SPCashBookRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCashBook+SPCashBookRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCashBook+SPCashBookRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCashBook.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSChartofAcc.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSClaimRegister+ClaimRegisterDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSClaimRegister+ClaimRegisterRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSClaimRegister+ClaimRegisterRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSClaimRegister+ClaimRegisterRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSClaimRegister.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCOA+ChartOfAccountsDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCOA+ChartOfAccountsRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCOA+ChartOfAccountsRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCOA+ChartOfAccountsRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCOA.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCurrentStock+CurrentStockDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCurrentStock+CurrentStockRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCurrentStock+CurrentStockRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCurrentStock+CurrentStockRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSCurrentStock.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSDailySummary+DtDailyItemSummaryDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSDailySummary+DtDailyItemSummaryRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSDailySummary+DtDailyItemSummaryRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSDailySummary+DtDailyItemSummaryRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSDailySummary.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSExpChart+ExpChartDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSExpChart+ExpChartRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSExpChart+ExpChartRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSExpChart+ExpChartRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSExpChart.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSGodownStock+GodownStockDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSGodownStock+GodownStockRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSGodownStock+GodownStockRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSGodownStock+GodownStockRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSGodownStock.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemBarcode+SPItemBarcodeDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemBarcode+SPItemBarcodeRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemBarcode+SPItemBarcodeRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemBarcode+SPItemBarcodeRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemBarcode.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemLedger+ItemLedgerDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemLedger+ItemLedgerRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemLedger+ItemLedgerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemLedger+ItemLedgerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSItemLedger.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseInvoice+PurchaseInvoiceRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseInvoice.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseRegister+PurchaseRegisterDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseRegister+PurchaseRegisterRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseRegister+PurchaseRegisterRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseRegister+PurchaseRegisterRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSPurchaseRegister.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSReOrder+ReOrderDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSReOrder+ReOrderRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSReOrder+ReOrderRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSReOrder+ReOrderRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSReOrder.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleInvoice+SaleInvoiceDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleInvoice+SaleInvoiceRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleInvoice+SaleInvoiceRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleInvoice+SaleInvoiceRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleInvoice.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleRegister+SaleRegisterDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleRegister+SaleRegisterRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleRegister+SaleRegisterRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleRegister+SaleRegisterRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSaleRegister.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockAdj+StockAdjDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockAdj+StockAdjRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockAdj+StockAdjRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockAdj+StockAdjRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockAdj.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockShift+StockShiftDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockShift+StockShiftRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockShift+StockShiftRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockShift+StockShiftRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSStockShift.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSummary+SummaryDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSummary+SummaryRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSummary+SummaryRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSummary+SummaryRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSSummary.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSVoucher+VoucherDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSVoucher+VoucherRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSVoucher+VoucherRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSVoucher+VoucherRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSVoucher.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSWastageReg+WastageInvoiceDataTable.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSWastageReg+WastageInvoiceRow.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSWastageReg+WastageInvoiceRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSWastageReg+WastageInvoiceRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\PointOfSale.Data_Sets.DSWastageReg.datasource" />
+    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarcodeLibTest\BarcodeLibTest.csproj">
+      <Project>{ad35c48d-edde-41cf-baa7-ea6b42f261ce}</Project>
+      <Name>BarcodeLibTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BarcodeStickerPrinter\BarcodeStickerPrinter.csproj">
+      <Project>{6b33c64d-7a73-4fd2-ae50-5ff2860e19a7}</Project>
+      <Name>BarcodeStickerPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonController\CommonController.csproj">
+      <Project>{7d37514c-8dd8-4ede-98f4-e6dd8e76cb57}</Project>
+      <Name>CommonController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{efc6cb80-05de-448f-b103-fac5c2ebb19e}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\MenuWiseSale.PNG" />
+    <None Include="bin\Debug\Images\NewOrdrr.png" />
+    <None Include="bin\Debug\Images\kitchenEXE.PNG" />
+    <Content Include="Misc\logo.ico" />
+    <Content Include="Misc\technorati.ico" />
+    <None Include="Resources\TC1Kbd.jpg" />
+    <None Include="Resources\2222.jpg" />
+    <None Include="Resources\111.jpg" />
+    <None Include="Resources\22221.jpg" />
+    <None Include="Resources\hdlogin.jpg" />
+    <None Include="Resources\vector-abstract-business-card.jpg" />
+    <None Include="Resources\images %288%29.jpg" />
+    <None Include="Resources\nesBackGround.png" />
+    <None Include="Resources\snp.PNG" />
+    <None Include="Resources\login.PNG" />
+    <None Include="Resources\ds.PNG" />
+    <None Include="Resources\icons8_menu.1_32.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Open-pane %282%29.png" />
+    <None Include="Resources\Close-pane %281%29.png" />
+    <None Include="Resources\rmsc.jpg" />
+    <None Include="Resources\Order1.PNG" />
+    <None Include="Resources\Actions-window-close-icon.png" />
+    <None Include="Resources\NewOrdrr.png" />
+    <None Include="Resources\Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

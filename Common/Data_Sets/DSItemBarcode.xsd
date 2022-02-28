@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSItemBarcode" targetNamespace="http://tempuri.org/DSItemBarcode.xsd" xmlns:mstns="http://tempuri.org/DSItemBarcode.xsd" xmlns="http://tempuri.org/DSItemBarcode.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSItemBarcode" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSItemBarcode" msprop:Generator_UserDSName="DSItemBarcode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SPItemBarcode" msprop:Generator_UserTableName="SPItemBarcode" msprop:Generator_RowEvArgName="SPItemBarcodeRowChangeEvent" msprop:Generator_TableVarName="tableSPItemBarcode" msprop:Generator_TablePropName="SPItemBarcode" msprop:Generator_RowDeletingName="SPItemBarcodeRowDeleting" msprop:Generator_RowChangingName="SPItemBarcodeRowChanging" msprop:Generator_RowDeletedName="SPItemBarcodeRowDeleted" msprop:Generator_RowEvHandlerName="SPItemBarcodeRowChangeEventHandler" msprop:Generator_TableClassName="SPItemBarcodeDataTable" msprop:Generator_RowChangedName="SPItemBarcodeRowChanged" msprop:Generator_RowClassName="SPItemBarcodeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Itemname" msprop:Generator_ColumnVarNameInTable="columnItemname" msprop:Generator_ColumnPropNameInRow="Itemname" msprop:Generator_ColumnPropNameInTable="ItemnameColumn" msprop:Generator_UserColumnName="Itemname" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemPrice" msprop:Generator_ColumnVarNameInTable="columnItemPrice" msprop:Generator_ColumnPropNameInRow="ItemPrice" msprop:Generator_ColumnPropNameInTable="ItemPriceColumn" msprop:Generator_UserColumnName="ItemPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemQuantity" msprop:Generator_ColumnVarNameInTable="columnItemQuantity" msprop:Generator_ColumnPropNameInRow="ItemQuantity" msprop:Generator_ColumnPropNameInTable="ItemQuantityColumn" msprop:Generator_UserColumnName="ItemQuantity" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemBarCode" msprop:Generator_ColumnVarNameInTable="columnItemBarCode" msprop:Generator_ColumnPropNameInRow="ItemBarCode" msprop:Generator_ColumnPropNameInTable="ItemBarCodeColumn" msprop:Generator_UserColumnName="ItemBarCode" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="BarcodeImage" msprop:Generator_ColumnVarNameInTable="columnBarcodeImage" msprop:Generator_ColumnPropNameInRow="BarcodeImage" msprop:Generator_ColumnPropNameInTable="BarcodeImageColumn" msprop:Generator_UserColumnName="BarcodeImage" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

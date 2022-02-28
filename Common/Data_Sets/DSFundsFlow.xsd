@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSFundsFlow" targetNamespace="http://tempuri.org/DSFundsFlow.xsd" xmlns:mstns="http://tempuri.org/DSFundsFlow.xsd" xmlns="http://tempuri.org/DSFundsFlow.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSFundsFlow" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSFundsFlow" msprop:Generator_DataSetName="DSFundsFlow" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SPFundsFlow" msprop:Generator_UserTableName="SPFundsFlow" msprop:Generator_RowDeletedName="SPFundsFlowRowDeleted" msprop:Generator_RowChangedName="SPFundsFlowRowChanged" msprop:Generator_RowClassName="SPFundsFlowRow" msprop:Generator_RowChangingName="SPFundsFlowRowChanging" msprop:Generator_RowEvArgName="SPFundsFlowRowChangeEvent" msprop:Generator_RowEvHandlerName="SPFundsFlowRowChangeEventHandler" msprop:Generator_TableClassName="SPFundsFlowDataTable" msprop:Generator_TableVarName="tableSPFundsFlow" msprop:Generator_RowDeletingName="SPFundsFlowRowDeleting" msprop:Generator_TablePropName="SPFundsFlow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountName" msprop:Generator_UserColumnName="AccountName" msprop:Generator_ColumnVarNameInTable="columnAccountName" msprop:Generator_ColumnPropNameInRow="AccountName" msprop:Generator_ColumnPropNameInTable="AccountNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyName" msprop:Generator_UserColumnName="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VoucherNo" msprop:Generator_UserColumnName="VoucherNo" msprop:Generator_ColumnVarNameInTable="columnVoucherNo" msprop:Generator_ColumnPropNameInRow="VoucherNo" msprop:Generator_ColumnPropNameInTable="VoucherNoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="VoucherDate" msprop:Generator_UserColumnName="VoucherDate" msprop:Generator_ColumnVarNameInTable="columnVoucherDate" msprop:Generator_ColumnPropNameInRow="VoucherDate" msprop:Generator_ColumnPropNameInTable="VoucherDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsPostDated" msprop:Generator_UserColumnName="IsPostDated" msprop:Generator_ColumnVarNameInTable="columnIsPostDated" msprop:Generator_ColumnPropNameInRow="IsPostDated" msprop:Generator_ColumnPropNameInTable="IsPostDatedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountNo" msprop:Generator_UserColumnName="AccountNo" msprop:Generator_ColumnVarNameInTable="columnAccountNo" msprop:Generator_ColumnPropNameInRow="AccountNo" msprop:Generator_ColumnPropNameInTable="AccountNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IsClosing" msprop:Generator_UserColumnName="IsClosing" msprop:Generator_ColumnPropNameInRow="IsClosing" msprop:Generator_ColumnVarNameInTable="columnIsClosing" msprop:Generator_ColumnPropNameInTable="IsClosingColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="GAmount" msprop:Generator_UserColumnName="GAmount" msprop:Generator_ColumnPropNameInRow="GAmount" msprop:Generator_ColumnVarNameInTable="columnGAmount" msprop:Generator_ColumnPropNameInTable="GAmountColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPTotal" msprop:Generator_UserTableName="SPTotal" msprop:Generator_RowDeletedName="SPTotalRowDeleted" msprop:Generator_RowChangedName="SPTotalRowChanged" msprop:Generator_RowClassName="SPTotalRow" msprop:Generator_RowChangingName="SPTotalRowChanging" msprop:Generator_RowEvArgName="SPTotalRowChangeEvent" msprop:Generator_RowEvHandlerName="SPTotalRowChangeEventHandler" msprop:Generator_TableClassName="SPTotalDataTable" msprop:Generator_TableVarName="tableSPTotal" msprop:Generator_RowDeletingName="SPTotalRowDeleting" msprop:Generator_TablePropName="SPTotal">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountName" msprop:Generator_UserColumnName="AccountName" msprop:Generator_ColumnPropNameInRow="AccountName" msprop:Generator_ColumnVarNameInTable="columnAccountName" msprop:Generator_ColumnPropNameInTable="AccountNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PartyName" msprop:Generator_UserColumnName="PartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VoucherNo" msprop:Generator_UserColumnName="VoucherNo" msprop:Generator_ColumnPropNameInRow="VoucherNo" msprop:Generator_ColumnVarNameInTable="columnVoucherNo" msprop:Generator_ColumnPropNameInTable="VoucherNoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="VoucherDate" msprop:Generator_UserColumnName="VoucherDate" msprop:Generator_ColumnPropNameInRow="VoucherDate" msprop:Generator_ColumnVarNameInTable="columnVoucherDate" msprop:Generator_ColumnPropNameInTable="VoucherDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsPostDated" msprop:Generator_UserColumnName="IsPostDated" msprop:Generator_ColumnPropNameInRow="IsPostDated" msprop:Generator_ColumnVarNameInTable="columnIsPostDated" msprop:Generator_ColumnPropNameInTable="IsPostDatedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountNo" msprop:Generator_UserColumnName="AccountNo" msprop:Generator_ColumnPropNameInRow="AccountNo" msprop:Generator_ColumnVarNameInTable="columnAccountNo" msprop:Generator_ColumnPropNameInTable="AccountNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPayment" msprop:Generator_UserColumnName="IsPayment" msprop:Generator_ColumnPropNameInRow="IsPayment" msprop:Generator_ColumnVarNameInTable="columnIsPayment" msprop:Generator_ColumnPropNameInTable="IsPaymentColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
